@@ -8,7 +8,7 @@ readme = "README.md"
 dependencies = [
     "flask==3.0.3",
     "requests==2.32.3",
-    "aiohttp==3.10.10",
+    "aiohttp==3.11.0b0",
     "python-dotenv==1.0.1",
     "flask-cors==5.0.0",
     "rich==13.9.2",
