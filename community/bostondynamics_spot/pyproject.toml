@@ -9,7 +9,7 @@ dependencies = [
     "restack-ai>=0.0.55,<0.0.56",
     "bosdyn-client==4.1.0",
     "opencv-python==4.10.0.84",
-    "setuptools==75.6.0",
+    "setuptools==78.1.1",
 ]
 
 [project.scripts]
