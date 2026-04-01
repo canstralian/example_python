@@ -219,9 +219,9 @@ python-dateutil==2.9.0.post0 ; python_full_version < '3.11' \
 python-dotenv==1.0.1 \
     --hash=sha256:e324ee90a023d808f1959c46bcbc04446a10ced277783dc6ee09987c37ec10ca \
     --hash=sha256:f7b63ef50f1b690dddf550d03497b66d609393b40b564ed0d674909a68ebf16a
-requests==2.32.3 \
-    --hash=sha256:55365417734eb18255590a9ff9eb97e9e1da868d4ccd6402399eaf68af20a760 \
-    --hash=sha256:70761cfe03c773ceb22aa2f671b4757976145175cdfca038c02654d061d6dcc6
+requests==2.33.0 \
+    --hash=sha256:3324635456fa185245e24865e810cecec7b4caf933d7eb133dcde67d48cee69b \
+    --hash=sha256:c7ebc5e8b0f21837386ad0e1c8fe8b829fa5f544d8df3b2253bff14ef29d7652
 restack-ai==0.0.47 \
     --hash=sha256:091b9741337df62c7315cef42d6dc5914fcf04fba0500b2b6ce05f82241b7059 \
     --hash=sha256:11cb242c88ce1abbd966dc35f500217ebf73149b1648624cbcd9d4991417abc5
