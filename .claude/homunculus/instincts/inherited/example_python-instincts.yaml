@@ -1,0 +1,323 @@
+# Instincts generated from https://github.com/canstralian/example_python
+# Generated: 2026-04-01T21:10:11.599Z
+# Version: 2.0
+# NOTE: This file supplements (does not replace) any existing curated instincts.
+# High-confidence manually curated instincts should be preserved alongside these.
+
+---
+id: example_python-commit-length
+trigger: "when writing a commit message"
+confidence: 0.6
+domain: git
+source: repo-analysis
+source_repo: https://github.com/canstralian/example_python
+---
+
+# Example_python Commit Length
+
+## Action
+
+Write moderate-length commit messages (~56 characters)
+
+## Evidence
+
+- Average commit message length: 56 chars
+- Based on 4 commits
+
+---
+id: example_python-naming-files
+trigger: "when creating a new file"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/canstralian/example_python
+---
+
+# Example_python Naming Files
+
+## Action
+
+Use snake_case naming convention
+
+## Evidence
+
+- Analyzed file naming patterns in repository
+- Dominant pattern: snake_case
+
+---
+id: example_python-import-relative
+trigger: "when importing modules"
+confidence: 0.75
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/canstralian/example_python
+---
+
+# Example_python Import Relative
+
+## Action
+
+Use relative imports for project files
+
+## Evidence
+
+- Import analysis shows relative import pattern
+- Example: import { x } from '../lib/x'
+
+---
+id: example_python-export-style
+trigger: "when exporting from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: https://github.com/canstralian/example_python
+---
+
+# Example_python Export Style
+
+## Action
+
+Prefer named exports
+
+## Evidence
+
+- Export pattern analysis
+- Dominant style: named
+
+---
+id: example_python-test-separate
+trigger: "when writing tests"
+confidence: 0.8
+domain: testing
+source: repo-analysis
+source_repo: https://github.com/canstralian/example_python
+---
+
+# Example_python Test Separate
+
+## Action
+
+Place tests in the tests/ or __tests__/ directory, mirroring src structure
+
+## Evidence
+
+- Separate test directory pattern detected
+- Tests live in dedicated test folders
+
+---
+id: example_python-workflow-dependency-update-pip-group
+trigger: "when doing dependency update pip group"
+confidence: 0.55
+domain: workflow
+source: repo-analysis
+source_repo: https://github.com/canstralian/example_python
+---
+
+# Example_python Workflow Dependency Update Pip Group
+
+## Action
+
+Follow the dependency-update-pip-group workflow:
+1. Identify outdated dependencies in multiple subproject directories.
+2. Update the relevant dependency versions in requirements.txt and/or pyproject.toml files.
+3. Commit all updated files in a single commit, often with a detailed changelog in the commit message.
+
+## Evidence
+
+- Workflow detected from commit patterns
+- Frequency: ~1x per month
+- Files: **/requirements.txt, **/pyproject.toml
+
+---
+id: example_python-naming-files-snake_case
+trigger: "When creating or renaming a file"
+confidence: 0.9
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/example_python
+---
+
+# Example_python Naming Files Snake_case
+
+## Action
+
+Use snake_case for file names
+
+## Evidence
+
+- Pattern in files: community, production_demo, agent_tool, agent_chat, audio_transcript, email_sender, pdf_ocr, quickstart, features
+
+---
+id: example_python-naming-functions-camelCase
+trigger: "When defining a function"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/example_python
+---
+
+# Example_python Naming Functions CamelCase
+
+## Action
+
+Use camelCase for function names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.functions
+
+---
+id: example_python-naming-classes-PascalCase
+trigger: "When defining a class"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/example_python
+---
+
+# Example_python Naming Classes PascalCase
+
+## Action
+
+Use PascalCase for class names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.classes
+
+---
+id: example_python-naming-constants-SCREAMING_SNAKE_CASE
+trigger: "When defining a constant"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/example_python
+---
+
+# Example_python Naming Constants SCREAMING_SNAKE_CASE
+
+## Action
+
+Use SCREAMING_SNAKE_CASE for constant names
+
+## Evidence
+
+- Pattern in codeStyle.namingConventions.constants
+
+---
+id: example_python-imports-relative
+trigger: "When importing modules within the package"
+confidence: 0.8
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/example_python
+---
+
+# Example_python Imports Relative
+
+## Action
+
+Use relative imports
+
+## Evidence
+
+- Pattern in codeStyle.importStyle
+
+---
+id: example_python-exports-named
+trigger: "When exporting functions or classes from a module"
+confidence: 0.7
+domain: code-style
+source: repo-analysis
+source_repo: canstralian/example_python
+---
+
+# Example_python Exports Named
+
+## Action
+
+Use named exports
+
+## Evidence
+
+- Pattern in codeStyle.exportStyle
+
+---
+id: example_python-tests-separate-location
+trigger: "When writing tests"
+confidence: 0.9
+domain: testing
+source: repo-analysis
+source_repo: canstralian/example_python
+---
+
+# Example_python Tests Separate Location
+
+## Action
+
+Place test files in a separate directory from source code
+
+## Evidence
+
+- Pattern in architecture.folderStructure.testLocation: separate
+
+---
+id: example_python-commits-freeform
+trigger: "When writing a commit message"
+confidence: 0.8
+domain: git
+source: repo-analysis
+source_repo: canstralian/example_python
+---
+
+# Example_python Commits Freeform
+
+## Action
+
+Use freeform commit messages without a strict prefix, typically describing the change concisely
+
+## Evidence
+
+- Seen in commit: 'Bump the pip group across 29 directories with 8 updates'
+- Seen in commit: 'Initial commit'
+
+---
+id: example_python-commits-merge-pr-format
+trigger: "When merging a pull request"
+confidence: 0.9
+domain: git
+source: repo-analysis
+source_repo: canstralian/example_python
+---
+
+# Example_python Commits Merge Pr Format
+
+## Action
+
+Use the format: 'Merge pull request #[number] from [branch]' in the commit message
+
+## Evidence
+
+- Seen in commit: 'Merge pull request #1 from canstralian/dependabot/pip/community/bostondynamics_spot/pip-4a5b02d15d'
+
+---
+id: example_python-workflow-dependency-update-pip-group
+trigger: "When dependencies need to be updated across multiple Python subprojects"
+confidence: 0.98
+domain: workflow
+source: repo-analysis
+source_repo: canstralian/example_python
+---
+
+# Example_python Workflow Dependency Update Pip Group
+
+## Action
+
+Batch update dependency versions in all relevant requirements.txt and pyproject.toml files, then commit all changes in a single commit with a detailed changelog
+
+## Evidence
+
+- Workflow: dependency-update-pip-group
+- Seen in commit: 'Bump the pip group across 29 directories with 8 updates'
+- Files involved: **/requirements.txt, **/pyproject.toml
+
