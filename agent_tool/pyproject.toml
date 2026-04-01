@@ -8,7 +8,7 @@ readme = "README.md"
 dependencies = [
     "watchfiles>=1.0.0,<2",
     "pydantic>=2.10.4,<3",
-    "requests==2.33.0",
+    "requests==2.33.1",
     "openai>=1.60.2,<2",
     "restack-ai>=0.0.57,<0.0.58",
 ]
