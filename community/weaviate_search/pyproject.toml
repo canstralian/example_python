@@ -9,7 +9,7 @@ dependencies = [
     "pydantic>=2.10.3,<3",
     "requests==2.33.0",
     "weaviate-client==4.9.0",
-    "python-dotenv==1.0.1",
+    "python-dotenv==1.2.2",
 ]
 
 [project.scripts]
@@ -18,7 +18,7 @@ schedule-seed-workflow = "schedule_workflow:run_schedule_seed_workflow"
 schedule-search-workflow = "schedule_workflow:run_schedule_search_workflow"
 
 [dependency-groups]
-dev = ["pytest==6.2"]
+dev = ["pytest==9.0.3"]
 
 [tool.hatch.build.targets.sdist]
 include = ["src"]
